@@ -1,0 +1,720 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<meta name="keywords" content="Unicivix, creative studio, video editing, graphic designing, branding, website development, social media management, internships, creative agency, digital marketing, UI UX design">
+<meta name="robots" content="index, follow">
+
+<!-- Social Sharing -->
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://unicivix.in/assets/og-image-home.png">
+<meta property="og:site_name" content="Unicivix">
+<meta property="og:locale" content="en_IN">
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta property="og:image" content="https://unicivix.in/assets/og-image-home.png">
+
+  <!-- SEO for Home -->
+<title>Unicivix — Creative Tech Studio | Editing, Design, Websites & Branding</title>
+<meta name="description" content="Unicivix is a creative tech studio offering video editing, graphic design, branding, UI/UX, website development, internships, and creator events. Inspire Your Skill. Ignite Your Project.">
+<link rel="canonical" href="https://unicivix.in/">
+
+  <link rel="icon" href="ASSETS\favicon.png">
+<meta name="theme-color" content="#000000">
+
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Unicivix — Creative & Tech Studio | SMM, Motion, Design, Web, Tech Support</title>
+  <meta name="description"
+    content="Unicivix blends creativity and technology—social media marketing, motion graphics, video editing, graphic & web design, and tech support. Competitions & events for students." />
+  <meta property="og:title" content="Unicivix" />
+  <meta property="og:description" content="Where Creativity Powers Technology
+  <meta property="og:image" content="ASSETS/og-image-home.png" />
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+
+  <!-- Tailwind (CDN) + Config -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#3F8CFF',
+            navy: '#0B1B2B',
+            silver: '#BFC7D5'
+          },
+          fontFamily: { sans: ['Inter', 'ui-sans-serif', 'system-ui'] },
+          boxShadow: { glass: '0 8px 32px rgba(63,140,255,.25)' }
+        }
+      }
+    }
+  </script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Unicivix",
+  "url": "https://unicivix.in",
+  "logo": "https://unicivix.in/assets/logo.png",
+  "sameAs": [
+    "https://www.instagram.com/unicivix",
+    "https://www.linkedin.com/company/unicivix",
+    "https://wa.me/918290223644"
+  ]
+}
+</script>
+
+  <!-- Your custom CSS -->
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- GSAP / Lottie (optional) -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.12.2/lottie.min.js" defer></script>
+</head>
+
+<body class="font-sans text-white grad">
+  <script>
+    window.addEventListener('load', () => {
+      if (window.gsap && window.ScrollTrigger) {
+        gsap.utils.toArray("section").forEach(section => {
+          gsap.from(section, {
+            opacity: 0,
+            y: 50,
+            duration: 1.2,
+            ease: "power2.out",
+            scrollTrigger: {
+              trigger: section,
+              start: "top 85%",
+              toggleActions: "play none none reverse"
+            }
+          });
+        });
+      }
+    });
+  </script>
+
+  <!-- ============ NAV ============ -->
+  <header class="sticky top-0 z-50 bg-navy/80 backdrop-blur border-b border-white/10">
+    <nav class="mx-auto max-w-10xl flex items-center justify-between px-4 py-3">
+      <!-- Brand -->
+      <a class="flex items-center hover:scale-105 transition-transform duration-300" href="#home">
+        <img src="ASSETS/LOGO2.png" alt="Unicivix Logo"
+          class="h-20 w-auto md:h-24 lg:h-28 mr-0 drop-shadow-[0_0_6px_rgba(255,255,255,0.8)]" />
+        <span class="ml-[-10px] text-2xl md:text-3xl font-extrabold tracking-wide text-white">Unicivix</span>
+      </a>
+
+      <!-- Desktop links -->
+      <ul class="hidden md:flex items-center gap-10 text-silver">
+        <li><a href="#home" class="hover:text-white">Home</a></li>
+        <li><a href="Aboutus.html" class="hover:text-white">About Us</a></li>
+        <li><a href="services.html" class="hover:text-white">Services</a></li>
+        <!-- Events & Internships pages removed -->
+        <li><a href="testimonials.html" class="hover:text-white">Quality team</a></li>
+        <li><a href="index.html#contact" class="hover:text-white">Contact</a></li>
+      </ul>
+
+      <!-- Desktop CTA -->
+      <a href="#contact"
+        class="hidden md:inline-block bg-primary text-navy font-semibold px-4 py-2 rounded-xl hover:opacity-90">WhatsApp / Quote</a>
+
+      <!-- Mobile Hamburger -->
+      <button id="nav-toggle"
+        class="md:hidden inline-flex items-center justify-center w-11 h-11 rounded-xl border border-white/15 bg-white/5 hover:bg-white/10 focus:outline-none focus:ring-2 focus:ring-primary"
+        aria-controls="mobile-nav" aria-expanded="false" aria-label="Open menu">
+        <svg id="icon-open" class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+          stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <line x1="3" y1="6" x2="21" y2="6" />
+          <line x1="3" y1="12" x2="21" y2="12" />
+          <line x1="3" y1="18" x2="21" y2="18" />
+        </svg>
+        <!-- Close icon -->
+        <svg id="icon-close" class="h-6 w-6 hidden" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+          stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <line x1="18" y1="6" x2="6" y2="18" />
+          <line x1="6" y1="6" x2="18" y2="18" />
+        </svg>
+      </button>
+    </nav>
+  </header>
+
+   <!-- Mobile Backdrop -->
+  <div id="nav-backdrop"
+       class="fixed inset-0 z-40 bg-black/50 backdrop-blur-sm opacity-0 pointer-events-none transition-opacity duration-200 md:hidden"></div>
+
+  <!-- Mobile Drawer -->
+  <aside id="mobile-nav"
+         class="fixed top-0 right-0 z-50 h-full w-[86%] max-w-sm translate-x-full md:hidden
+                bg-navy/95 border-l border-white/10 shadow-2xl transition-transform duration-300 will-change-transform"
+         role="dialog" aria-modal="true" aria-label="Site menu">
+    <div class="p-4 pb-2 flex items-center justify-between border-b border-white/10">
+      <div class="flex items-center">
+        <img src="ASSETS/LOGO2.png" alt="Unicivix" class="h-10 w-auto" />
+        <span class="ml-2 font-extrabold text-lg">Unicivix</span>
+      </div>
+      <button id="nav-close"
+              class="inline-flex items-center justify-center w-10 h-10 rounded-lg border border-white/15 bg-white/5 hover:bg-white/10 focus:outline-none focus:ring-2 focus:ring-primary"
+              aria-label="Close menu">
+        <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+          stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <line x1="18" y1="6" x2="6" y2="18" />
+          <line x1="6" y1="6" x2="18" y2="18" />
+        </svg>
+      </button>
+    </div>
+
+    <nav class="p-4">
+      <ul class="space-y-1 text-silver">
+        <li><a href="index.html#home" class="block px-3 py-3 rounded-xl hover:bg-white/5 hover:text-white">Home</a></li>
+        <li><a href="Aboutus.html" class="block px-3 py-3 rounded-xl hover:bg-white/5 hover:text-white">About Us</a></li>
+        <li><a href="services.html" class="block px-3 py-3 rounded-xl hover:bg-white/5 hover:text-white">Services</a></li>
+        <!-- Events & Internships pages removed -->
+      
+        <li><a href="testimonials.html" class="block px-3 py-3 rounded-xl hover:bg-white/5 hover:text-white">Quality team</a></li>
+        <li><a href="index.html#contact" class="block px-3 py-3 rounded-xl hover:bg-white/5 hover:text-white">Contact</a></li>
+      </ul>
+
+      <div class="mt-4 border-t border-white/10 pt-4">
+        <a href="https://wa.me/918290223644?text=Hi%20Unicivix%20Team!%20I%20have%20a%20quick%20question."
+           class="block text-center bg-primary text-navy font-semibold px-4 py-3 rounded-xl hover:opacity-90">
+          WhatsApp / Get a Quote
+        </a>
+      </div>
+    </nav>
+  </aside>
+  <!-- ========== /NAV ========== -->
+
+  <!-- HERO -->
+  <section id="home" class="relative overflow-hidden">
+    <!-- BG VIDEO -->
+    <div class="absolute inset-0 -z-10 overflow-hidden">
+      <div class="aspect-[16/9] md:aspect-auto md:h-full w-full">
+        <video class="w-full h-full object-cover pointer-events-none select-none"
+          src="ASSETS/lowinto01.mp4"ASSETS/hero-bg-poster.jpg" autoplay muted loop playsinline preload="metadata"></video>
+      </div>
+      <div class="absolute inset-0 bg-gradient-to-b from-black/50 via-black/35 to-black/60"></div>
+    </div>
+
+    <div class="mx-auto max-w-5xl px-4 pt-24 pb-20 text-center md:text-left flex flex-col items-center md:items-start space-y-8">
+      <p class="text-silver uppercase tracking-widest">Inspire Your Skill. Ignite Your Project.</p>
+      <h1 class="text-3xl md:text-6xl font-extrabold leading-tight max-w-3xl">
+        Where <span class="text-primary">Creativity</span> Meets <span class="text-primary">Technology</span>.
+      </h1>
+      <p class="text-silver text-lg max-w-2xl">
+        Social Media • Motion Graphics • Video Editing • Graphic Design • Web Design • Tech Support.
+      </p>
+
+      <div class="flex flex-wrap justify-center md:justify-start gap-4">
+        <a href="#contact" class="bg-primary text-navy font-semibold px-6 py-3 rounded-xl hover:opacity-90 transition-all duration-300">Get a Quote</a>
+        <a href="#services" class="glass px-6 py-3 rounded-xl border border-white/10">Explore Services</a>
+        
+      </div>
+
+      <!-- TRUSTED BY -->
+      <div class="flex flex-col items-center md:items-start gap-4 pt-6">
+        <span class="text-silver text-lg font-medium text-center md:text-left">Trusted by creators & startups</span>
+        <div class="flex flex-wrap items-center justify-center md:justify-start gap-6 md:gap-10">
+          <a href="https://jumbotail.com/" target="_blank" rel="noopener noreferrer"
+             class="h-10 w-24 md:h-14 md:w-28 flex items-center justify-center rounded-xl bg-white/5 backdrop-blur-sm border border-white/10 transition-all duration-500 ease-out hover:scale-110 hover:shadow-[0_0_18px_rgba(255,255,255,0.5)] hover:bg-white/10">
+            <img src="ASSETS/JumbotailLogo1.png" alt="Jumbotail Logo"
+                 class="h-7 w-auto object-contain grayscale hover:grayscale-0 transition-all duration-500 ease-out" />
+          </a>
+
+          <a href="https://www.inmobi.com/" target="_blank" rel="noopener noreferrer"
+             class="h-10 w-24 md:h-14 md:w-28 flex items-center justify-center rounded-xl bg-white/5 backdrop-blur-sm border border-white/10 transition-all duration-500 ease-out hover:scale-110 hover:shadow-[0_0_18px_rgba(255,255,255,0.5)] hover:bg-white/10">
+            <img src="ASSETS/InMobi-logo.svg" alt="InMobi Logo"
+                 class="h-7 w-auto object-contain grayscale hover:grayscale-0 transition-all duration-500 ease-out" />
+          </a>
+
+          <a href="https://www.medibuddy.in/" target="_blank" rel="noopener noreferrer"
+             class="h-10 w-24 md:h-14 md:w-28 flex items-center justify-center rounded-xl bg-white/5 backdrop-blur-sm border border-white/10 transition-all duration-500 ease-out hover:scale-110 hover:shadow-[0_0_18px_rgba(255,255,255,0.5)] hover:bg-white/10">
+            <img src="ASSETS/medibuddyWithName.svg" alt="MediBuddy Logo"
+                 class="h-7 w-auto object-contain grayscale hover:grayscale-0 transition-all duration-500 ease-out" />
+          </a>
+
+          <a href="https://www.livspace.com/in" target="_blank" rel="noopener noreferrer"
+             class="h-10 w-24 md:h-14 md:w-28 flex items-center justify-center rounded-xl bg-white/5 backdrop-blur-sm border border-white/10 transition-all duration-500 ease-out hover:scale-110 hover:shadow-[0_0_18px_rgba(255,255,255,0.5)] hover:bg-white/10">
+            <img src="ASSETS/livspace.458227b.svg" alt="Livspace Logo"
+                 class="h-7 w-auto object-contain grayscale hover:grayscale-0 transition-all duration-500 ease-out" />
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PARTNER: Unicivix tech -->
+  <section id="Unicivix tech" class="py-16 border-t border-white/10">
+    <div class="mx-auto max-w-7xl px-4">
+      <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-4">
+        <div>
+          <h2 class="text-3xl md:text-4xl font-extrabold">AI-Powered Content Strategist at Unicivix</h2>
+          <p class="text-silver mt-2">A trusted software & IT solutions collaborator powering Unicivix’s tech backbone.</p>
+        </div>
+      </div>
+
+      <!-- Featured Partner Card -->
+      <article class="mt-8 glass rounded-2xl p-6 md:p-8 grid md:grid-cols-5 gap-6 items-center group will-change-transform" data-tilt-card>
+        <div class="md:col-span-2">
+          <div class="relative h-44 md:h-56 w-full overflow-hidden rounded-xl">
+            <video autoplay muted loop playsinline preload="metadata"
+              class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-110">
+              <source src="ASSETS/247.mp4" type="video/mp4">
+            </video>
+            <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+          </div>
+
+          <div class="flex items-center gap-3 mt-4">
+            <img src="ASSETS/Uni 24-7.png"
+                 class="h-20 w-20 rounded-lg bg-white/10 p-1 border border-white/10">
+            <p class="text-lg font-bold">Ai Content Strategist 
+          </div>
+        </div>
+
+        <div class="md:col-span-3">
+          <p class="text-silver">
+            Unicivix proudly collaborates with <span class="text-white font-semibold">Unicivix tech</span>, a trusted software and IT solutions company known for its expertise in
+            <span class="text-white">Website Development</span>, <span class="text-white">CRM Software</span>, <span class="text-white">ERP Systems</span>, <span class="text-white">Branding</span>, and <span class="text-white">Digital Marketing</span>.
+          </p>
+
+          <p class="text-silver mt-3">
+            Through this partnership, we bring together Unicivix’s creative education and talent network with Unicivix tech’s robust technical capabilities.
+            From developing CRM systems and business automation tools to crafting user-friendly websites, Unicivix tech ensures every project is built with quality, performance, and precision.
+          </p>
+
+          <div class="mt-4 glass rounded-xl p-4 border border-white/10">
+            <p class="text-sm text-silver">
+              👉 <span class="text-white font-medium">All software and digital solutions</span> developed through this collaboration follow <span class="text-white font-medium">Unicivix tech’s development standards</span>, ensuring consistent quality, security, and reliability across every project.
+            </p>
+          </div>
+
+          <blockquote class="mt-4 italic text-silver">“Unicivix tech is not just a service provider, it’s a growth partner helping us transform ideas into innovation.”</blockquote>
+
+          <ul class="mt-5 grid sm:grid-cols-2 lg:grid-cols-3 gap-2 text-silver">
+            <li class="flex items-center gap-2"><span class="inline-block w-2 h-2 rounded-full bg-primary"></span> Websites & Web Apps</li>
+            <li class="flex items-center gap-2"><span class="inline-block w-2 h-2 rounded-full bg-primary"></span> CRM/ERP Architecture</li>
+            <li class="flex items-center gap-2"><span class="inline-block w-2 h-2 rounded-full bg-primary"></span> Business Automation</li>
+            <li class="flex items-center gap-2"><span class="inline-block w-2 h-2 rounded-full bg-primary"></span> Branding & Marketing Tech</li>
+            <li class="flex items-center gap-2"><span class="inline-block w-2 h-2 rounded-full bg-primary"></span> Secure Dev Standards</li>
+            <li class="flex items-center gap-2"><span class="inline-block w-2 h-2 rounded-full bg-primary"></span> Ongoing Support</li>
+          </ul>
+
+          <div class="mt-6 flex flex-wrap gap-3">
+            <a href="https://www.Unicivix tech.in/" class="glass px-5 py-3 rounded-xl border border-white/10 hover:-translate-y-0.5 transition">Visit Unicivix tech</a>
+            <a href="https://www.Unicivix tech.in/contact-us.html" class="glass px-5 py-3 rounded-xl border border-white/10 hover:-translate-y-0.5 transition">Build with Unicivix × Unicivix tech</a>
+            <a href="#" class="glass px-5 py-3 rounded-xl border border-white/10 hover:-translate-y-0.5 transition">Case Study</a>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services" class="py-16 border-t border-white/10">
+    <div class="mx-auto max-w-7xl px-4">
+      <h2 class="text-3xl md:text-4xl font-extrabold mb-4">Services</h2>
+      <p class="text-silver mb-10">Design powered by engineering. Agile sprints. No surprises.</p>
+
+      <div class="grid md:grid-cols-3 gap-6">
+        <!-- Service cards ... (unchanged) -->
+        <div class="glass rounded-2xl overflow-hidden group relative hover:-translate-y-1 transition">
+          <div class="relative h-48 overflow-hidden rounded-t-2xl">
+            <img src="ASSETS/socialmedia.jpg" alt="Social Media Marketing"
+              class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-110">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-bold mb-2">Social Media Marketing</h3>
+            <ul class="list-disc list-inside text-silver space-y-1 mb-4">
+              <li>Strategy & content calendar</li>
+              <li>Paid ads & analytics</li>
+              <li>Monthly reports</li>
+            </ul>
+            <a href="#contact" class="text-primary font-semibold">Request Proposal →</a>
+          </div>
+        </div>
+
+        <div class="glass rounded-2xl overflow-hidden group relative hover:-translate-y-1 transition">
+          <div class="relative h-48 overflow-hidden rounded-t-2xl">
+            <img src="ASSETS/motiongraphics.webp" alt="Motion Graphics"
+              class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-110">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-bold mb-2">Motion Graphics</h3>
+            <ul class="list-disc list-inside text-silver space-y-1 mb-4">
+              <li>Logo stings & explainers</li>
+              <li>Product animations</li>
+              <li>Lottie exports</li>
+            </ul>
+            <a href="#contact" class="text-primary font-semibold">Request Proposal →</a>
+          </div>
+        </div>
+
+        <div class="glass rounded-2xl overflow-hidden group relative hover:-translate-y-1 transition">
+          <div class="relative h-48 overflow-hidden rounded-t-2xl">
+            <img src="ASSETS/videoediting.jpg" alt="Video Editing"
+              class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-110">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-bold mb-2">Video Editing</h3>
+            <ul class="list-disc list-inside text-silver space-y-1 mb-4">
+              <li>Reels/Shorts/YouTube</li>
+              <li>Color & sound polish</li>
+              <li>Subtitles & thumbnails</li>
+            </ul>
+            <a href="#contact" class="text-primary font-semibold">Request Proposal →</a>
+          </div>
+        </div>
+
+        <div class="glass rounded-2xl overflow-hidden group relative hover:-translate-y-1 transition">
+          <div class="relative h-48 overflow-hidden rounded-t-2xl">
+            <img src="ASSETS/GRAPHIC DESIGN.jpg" alt="Graphic Designing"
+              class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-110">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-bold mb-2">Graphic Designing</h3>
+            <ul class="list-disc list-inside text-silver space-y-1 mb-4">
+              <li>Brand kits & posters</li>
+              <li>Brochures, thumbnails</li>
+              <li>Print & digital</li>
+            </ul>
+            <a href="#contact" class="text-primary font-semibold">Request Proposal →</a>
+          </div>
+        </div>
+
+        <div class="glass rounded-2xl overflow-hidden group relative hover:-translate-y-1 transition">
+          <div class="relative h-48 overflow-hidden rounded-t-2xl">
+            <img src="ASSETS/WEBDEVELOPMENT.jpg" alt="Web Designing"
+              class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-110">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-bold mb-2">Web Designing</h3>
+            <ul class="list-disc list-inside text-silver space-y-1 mb-4">
+              <li>Landing pages & sites</li>
+              <li>UI kits, responsive</li>
+              <li>SEO-ready builds</li>
+            </ul>
+            <a href="#contact" class="text-primary font-semibold">Request Proposal →</a>
+          </div>
+        </div>
+
+        <div class="glass rounded-2xl overflow-hidden group relative hover:-translate-y-1 transition">
+          <div class="relative h-48 overflow-hidden rounded-t-2xl">
+            <img src="ASSETS/TECHSUPPORT.jpg" alt="Tech Support"
+              class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-110">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-bold mb-2">Tech Support</h3>
+            <ul class="list-disc list-inside text-silver space-y-1 mb-4">
+              <li>Fixes & integrations</li>
+              <li>Automation</li>
+              <li>Hosting help</li>
+            </ul>
+            <a href="#contact" class="text-primary font-semibold">Request Proposal →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+
+
+  <!-- CONTACT -->
+  <section id="contact" class="py-16 border-t border-white/10">
+    <div class="mx-auto max-w-5xl px-4">
+      <h2 class="text-3xl md:text-4xl font-extrabold mb-6">Contact / Get a Quote</h2>
+      <div class="grid md:grid-cols-2 gap-6">
+
+       <form id="contact-form" class="glass rounded-2xl p-6 grid gap-4"
+      method="POST" action="contact.php">
+      <input type="hidden" name="type" value="contact">
+
+
+  <input name="from_name" required placeholder="Name"
+    class="rounded-xl px-4 py-3 bg-white/5 border border-white/10" />
+
+  <input type="email" name="reply_to" required placeholder="Email"
+    class="rounded-xl px-4 py-3 bg-white/5 border border-white/10" />
+
+  <input name="phone" required placeholder="Phone"
+    class="rounded-xl px-4 py-3 bg-white/5 border border-white/10" />
+
+  <input name="company" placeholder="Company"
+    class="rounded-xl px-4 py-3 bg-white/5 border border-white/10" />
+
+  <label class="text-silver">What service do you need?</label>
+  <div class="grid grid-cols-2 gap-2 text-silver">
+    <label><input type="checkbox" name="services[]" value="Social Media" class="mr-2 accent-primary">Social Media</label>
+    <label><input type="checkbox" name="services[]" value="Motion Graphics" class="mr-2 accent-primary">Motion Graphics</label>
+    <label><input type="checkbox" name="services[]" value="Video Editing" class="mr-2 accent-primary">Video Editing</label>
+    <label><input type="checkbox" name="services[]" value="Graphic Design" class="mr-2 accent-primary">Graphic Design</label>
+    <label><input type="checkbox" name="services[]" value="Web Design" class="mr-2 accent-primary">Web Design</label>
+    <label><input type="checkbox" name="services[]" value="Tech Support" class="mr-2 accent-primary">Tech Support</label>
+  </div>
+
+  <select name="budget" class="rounded-xl px-4 py-3 bg-black/50 border border-white/10">
+    <option value="">Budget range</option>
+    <option>₹10k–₹25k</option>
+    <option>₹25k–₹50k</option>
+    <option>₹50k–₹1L</option>
+    <option>₹1L+</option>
+  </select>
+
+  <input name="deadline" placeholder="Deadline (e.g., 10 days)"
+    class="rounded-xl px-4 py-3 bg-white/5 border border-white/10" />
+
+  <textarea name="message" rows="4" placeholder="Project brief / link"
+    class="rounded-xl px-4 py-3 bg-white/5 border border-white/10"></textarea>
+
+  <label class="flex items-center gap-2 text-silver">
+    <input type="checkbox" name="consent" required class="accent-primary" />
+    I agree to be contacted about my inquiry.
+  </label>
+
+  <!-- Honeypot (bot protection) -->
+  <input type="text" name="_gotcha" class="hidden" aria-hidden="true" />
+
+  <button type="submit"
+    class="bg-primary text-navy font-semibold px-6 py-3 rounded-xl hover:opacity-90">
+    Submit
+  </button>
+
+  <!-- Yahi pe message show karenge -->
+  <p id="form-status" role="status" aria-live="polite"
+    class="text-silver mt-2 text-sm"></p>
+</form>
+
+
+
+        <div class="glass rounded-2xl p-6">
+          <h3 class="font-bold text-xl mb-3">Reach us</h3>
+
+          <p class="text-silver">
+            Email:
+            <a href="mailto:Unicivix04@gmail.com?subject=Project%20Inquiry%20-%20Unicivix&body=Hi%20Unicivix%20Team,%0D%0A%0D%0AI'd%20like%20to%20know%20more%20about%20your%20services.%20Please%20contact%20me%20at%20your%20earliest%20convenience.%0D%0A%0D%0ARegards,%0D%0A"
+              class="text-primary hover:underline hover:text-white transition-colors duration-200" target="_blank" rel="noopener noreferrer">
+              unicivixsolutions@gmail.com
+            </a>
+          </p>
+
+          <p class="text-silver">
+            WhatsApp:
+            <a href="https://wa.me/918290223644?text=Hi%20Unicivix%20Team!%20I%27m%20interested%20in%20your%20digital%20services."
+              class="text-primary hover:underline hover:text-white transition-colors duration-200" target="_blank" rel="noopener noreferrer">
+              +91 7732869027
+            </a>
+          </p>
+
+          <p class="text-silver">Address: <span class="text-white">Loha Mandi Road, Jaipur, India</span></p>
+
+          <div class="mt-4 h-48 w-full glass rounded overflow-hidden">
+            <iframe class="w-full h-full border-0 rounded"
+              src="https://www.google.com/maps?q=Jaipur%2C%20India&output=embed" allowfullscreen loading="lazy"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="border-t border-white/10">
+    <div class="mx-auto max-w-7xl px-4 py-8 flex flex-col md:flex-row items-center justify-between gap-4 text-silver">
+      <p>© <span id="year"></span> Unicivix • Inspire Your Skill. Ignite Your Project.</p>
+      <div class="flex gap-4">
+        <a href="Privacy.html" class="hover:text-white">Privacy</a>
+        <a href="terms.html" class="hover:text-white">Terms & Conditions</a>
+        <a href="FAQs.html" class="hover:text-white">FAQs</a>
+      </div>
+
+      <!-- Squircle clip defs -->
+      <svg width="0" height="0" style="position:absolute">
+        <defs>
+          <clipPath id="squircleClip" clipPathUnits="objectBoundingBox">
+            <path d="M 0,0.5 C 0,0 0,0 0.5,0 S 1,0 1,0.5 1,1 0.5,1 0,1 0,0.5"></path>
+          </clipPath>
+        </defs>
+      </svg>
+
+      <div class="relative flex items-end gap-x-3 p-2">
+        <a href="https:/www.instagram.com/unicivix_solutions/"
+           target="_blank" rel="noopener noreferrer" aria-label="Instagram" style="clip-path:url(#squircleClip)"
+           class="w-14 h-14 bg-gradient-to-br from-pink-500 via-red-500 to-yellow-500 rounded-xl flex items-center justify-center shadow-lg border border-pink-400/50 cursor-pointer transform transition-all duration-300 ease-out hover:scale-110 hover:-translate-y-2 hover:shadow-2xl">
+          <svg viewBox="0 0 448 512" fill="currentColor" class="h-8 w-8 text-white" aria-hidden="true">
+            <path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1z"/>
+          </svg>
+        </a>
+
+        <a href="https://www.linkedin.com/company/unicivix/" target="_blank" rel="noopener noreferrer"
+           aria-label="LinkedIn" style="clip-path:url(#squircleClip)"
+           class="w-14 h-14 bg-gradient-to-br from-blue-600 to-blue-800 rounded-xl flex items-center justify-center shadow-lg border border-blue-500/50 cursor-pointer transform transition-all duration-300 ease-out hover:scale-110 hover:-translate-y-2 hover:shadow-2xl">
+          <svg viewBox="0 0 24 24" fill="currentColor" class="h-8 w-8 text-white" aria-hidden="true">
+            <path d="M19 0h-14C2.239 0 0 2.239 0 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5V5c0-2.761-2.238-5-5-5zM8 19H5V8h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764S5.534 3.204 6.5 3.204s1.75.79 1.75 1.764S7.466 6.732 6.5 6.732zM20 19h-3v-5.604c0-3.368-4-3.113-4 0V19h-3V8h3v1.765c1.396-2.586 7-2.777 7 2.476V19z"/>
+          </svg>
+        </a>
+
+        <a href="https://wa.me/918290223644?text=Hi%20Unicivix%20Team!%20I%20have%20a%20quick%20question."
+           target="_blank" rel="noopener noreferrer" aria-label="WhatsApp" style="clip-path:url(#squircleClip)"
+           class="w-14 h-14 bg-gradient-to-br from-green-500 to-green-700 rounded-xl flex items-center justify-center shadow-lg border border-green-500/50 cursor-pointer transform transition-all duration-300 ease-out hover:scale-110 hover:-translate-y-2 hover:shadow-2xl">
+          <svg viewBox="0 0 16 16" fill="currentColor" class="h-8 w-8 text-white" aria-hidden="true">
+            <path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- LOTTIE BOT FOLLOWER -->
+<script>
+  (function () {
+    const params = new URLSearchParams(window.location.search);
+    const status = params.get('status');
+    const statusEl = document.getElementById('form-status');
+
+    if (!statusEl) return;
+
+    if (status === 'success') {
+      statusEl.textContent = "✅ Your query has been submitted successfully.";
+      statusEl.style.color = "#22c55e"; // green
+    } else if (status === 'validation_error') {
+      statusEl.textContent = "❌ Please fill Name, Email and Phone correctly.";
+      statusEl.style.color = "#f97373"; // red-ish
+    } else if (status === 'db_error' || status === 'insert_error' || status === 'prepare_error') {
+      statusEl.textContent = "⚠️ Something went wrong on our side. Please try again.";
+      statusEl.style.color = "#f97373";
+    } else {
+      statusEl.textContent = "";
+    }
+  })();
+</script>
+
+  <script>
+    // ===== Mobile Nav Controller =====
+    (() => {
+      const drawer = document.getElementById('mobile-nav');
+      const toggle = document.getElementById('nav-toggle');
+      const closeBtn = document.getElementById('nav-close');
+      const backdrop = document.getElementById('nav-backdrop');
+      const focusablesSelector = 'a[href], button:not([disabled]), textarea, input, select, [tabindex]:not([tabindex="-1"])';
+      let lastFocus = null;
+
+      const lockScroll = (on) => {
+        if (on) { document.documentElement.classList.add('overflow-hidden'); document.body.classList.add('overflow-hidden'); }
+        else { document.documentElement.classList.remove('overflow-hidden'); document.body.classList.remove('overflow-hidden'); }
+      };
+
+      const setIcons = (open) => {
+        document.getElementById('icon-open').classList.toggle('hidden', open);
+        document.getElementById('icon-close').classList.toggle('hidden', !open);
+      };
+
+      const open = () => {
+        lastFocus = document.activeElement;
+        drawer.classList.remove('translate-x-full');
+        backdrop.classList.remove('pointer-events-none');
+        backdrop.classList.add('opacity-100');
+        toggle.setAttribute('aria-expanded', 'true');
+        setIcons(true);
+        lockScroll(true);
+
+        const firstLink = drawer.querySelector('a, button');
+        firstLink && firstLink.focus();
+      };
+
+      const close = () => {
+        drawer.classList.add('translate-x-full');
+        backdrop.classList.add('pointer-events-none');
+        backdrop.classList.remove('opacity-100');
+        toggle.setAttribute('aria-expanded', 'false');
+        setIcons(false);
+        lockScroll(false);
+        lastFocus && lastFocus.focus();
+      };
+
+      toggle.addEventListener('click', () => {
+        const isOpen = toggle.getAttribute('aria-expanded') === 'true';
+        isOpen ? close() : open();
+      });
+
+      closeBtn.addEventListener('click', close);
+      backdrop.addEventListener('click', close);
+      drawer.addEventListener('click', (e) => {
+        const t = e.target;
+        if (t.matches('a[href^="#"], a[href^="http"], a[href$=".html"]')) close();
+      });
+
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') close();
+        if (e.key === 'Tab' && toggle.getAttribute('aria-expanded') === 'true') {
+          const focusables = drawer.querySelectorAll(focusablesSelector);
+          const first = focusables[0], last = focusables[focusables.length - 1];
+          if (!first || !last) return;
+          if (e.shiftKey && document.activeElement === first) { last.focus(); e.preventDefault(); }
+          else if (!e.shiftKey && document.activeElement === last) { first.focus(); e.preventDefault(); }
+        }
+      });
+
+      const mq = window.matchMedia('(min-width: 768px)');
+      mq.addEventListener('change', (ev) => { if (ev.matches) close(); });
+    })();
+  </script>
+
+  <!-- lottie-web (single include, NO integrity to avoid SRI mismatch) -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.12.2/lottie.min.js"></script>
+
+  <script>
+    (() => {
+      const wrap = document.getElementById('botFollowerWrap');
+      const JSON_PATH = 'ASSETS/Unicivix-bot.json';
+      if (!wrap || !window.lottie) return;
+
+      const anim = lottie.loadAnimation({
+        container: wrap,
+        renderer: 'svg',
+        loop: true,
+        autoplay: true,
+        path: JSON_PATH,
+        rendererSettings: { preserveAspectRatio: 'xMidYMid meet' }
+      });
+
+      const ease = 0.12, offset = { x: 12, y: 12 }, pad = 8, scale = 1.04;
+      let targetX = innerWidth / 2, targetY = innerHeight / 2, x = targetX, y = targetY;
+      let { width: w, height: h } = wrap.getBoundingClientRect();
+
+      const updateSize = () => { const r = wrap.getBoundingClientRect(); w = r.width; h = r.height; };
+      const handlePointer = (cx, cy) => { targetX = cx + offset.x; targetY = cy + offset.y; };
+
+      addEventListener('pointermove', e => handlePointer(e.clientX, e.clientY), { passive: true });
+      addEventListener('touchmove', e => { const t = e.touches && e.touches[0]; if (t) handlePointer(t.clientX, t.clientY); }, { passive: true });
+
+      const tick = () => {
+        x += (targetX - x) * ease; y += (targetY - y) * ease;
+        const maxX = innerWidth - w - pad, maxY = innerHeight - h - pad;
+        const clampedX = Math.max(pad, Math.min(x - w / 2, maxX));
+        const clampedY = Math.max(pad, Math.min(y - h / 2, maxY));
+        wrap.style.transform = `translate3d(${clampedX}px, ${clampedY}px, 0) scale(${scale})`;
+        requestAnimationFrame(tick);
+      };
+      tick();
+
+      addEventListener('resize', updateSize);
+      document.addEventListener('visibilitychange', () => { if (document.hidden) anim.pause(); else anim.play(); });
+
+      const media = matchMedia('(prefers-reduced-motion: reduce)');
+      const applyReduced = () => { if (media.matches) { anim.pause(); wrap.style.display = 'none'; } else { wrap.style.display = ''; anim.play(); } };
+      media.addEventListener?.('change', applyReduced); applyReduced();
+    })();
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,325 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<meta name="keywords" content="Unicivix, creative studio, video editing, graphic designing, branding, website development, social media management, internships, creative agency, digital marketing, UI UX design">
+<meta name="robots" content="index, follow">
+
+<!-- Social Sharing -->
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://unicivix.in/assets/og-image.jpg">
+<meta property="og:site_name" content="Unicivix">
+<meta property="og:locale" content="en_IN">
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://unicivix.in/assets/og-image.jpg">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="ASSETS/partners/unicivix-favicon.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="ASSETS/partners/unicivix-favicon.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="ASSETS/partners/unicivix-favicon.png">
+  <!-- Fallback apple-touch icon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="ASSETS/partners/unicivix.png">
+  <link rel="shortcut icon" href="ASSETS/partners/unicivix-favicon.png">
+  <!-- Fallback to the existing partner logo if favicon file is missing -->
+  <link rel="icon" href="ASSETS/partners/unicivix.png">
+  <link rel="manifest" href="ASSETS/manifest.json">
+<meta name="theme-color" content="#000000">
+
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Inspora — FAQs</title>
+
+  <!-- Tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: { primary: '#3F8CFF', navy: '#0B1B2B', silver: '#BFC7D5' },
+          boxShadow: { glass: '0 8px 28px rgba(63,140,255,.15)' }
+        }
+      }
+    }
+  </script>
+  <style>
+    body { background:#0B1B2B; color:#fff; font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Inter; }
+    .glass { background: rgba(255,255,255,.06); backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,.12); }
+    .faq-btn[aria-expanded="true"] .chev { transform: rotate(180deg); }
+  </style>
+
+  <!-- Basic smooth anchor scrolling -->
+  <style>
+    html { scroll-behavior: smooth; scroll-padding-top: 80px; }
+  </style>
+</head>
+
+<body class="min-h-screen">
+  <!-- Header -->
+  <header class="sticky top-0 z-40 bg-navy/80 backdrop-blur border-b border-white/10">
+    <nav class="mx-auto max-w-7xl px-4 py-3 flex items-center justify-between">
+      <a class="text-white font-extrabold text-2xl hover:opacity-90" href="index.html#home">Inspora</a>
+      <div class="hidden sm:flex items-center gap-4 text-silver">
+        <a href="#clients" class="hover:text-white">Clients</a>
+        <a href="#interns" class="hover:text-white">Interns</a>
+        <a href="#students" class="hover:text-white">College Students</a>
+      </div>
+      <a href="index.html#contact" class="hidden md:inline-block bg-primary text-navy font-semibold px-4 py-2 rounded-xl hover:opacity-90">Contact</a>
+    </nav>
+  </header>
+
+  <main class="mx-auto max-w-5xl px-4 sm:px-6 md:px-8 py-8 sm:py-12">
+    <div class="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4">
+      <div>
+        <h1 class="text-3xl sm:text-4xl font-extrabold">Frequently Asked Questions</h1>
+        <p class="text-silver mt-2">Quick answers for clients, interns, and student participants.</p>
+      </div>
+      <div class="flex flex-wrap gap-2">
+        <a href="#clients" class="px-4 py-2 rounded-xl glass text-silver hover:text-white">Clients</a>
+        <a href="#interns" class="px-4 py-2 rounded-xl glass text-silver hover:text-white">Interns</a>
+        <a href="#students" class="px-4 py-2 rounded-xl glass text-silver hover:text-white">College Students</a>
+      </div>
+    </div>
+
+    <!-- Clients -->
+    <section id="clients" class="mt-8 sm:mt-10">
+      <h2 class="text-2xl sm:text-3xl font-extrabold mb-4">Clients</h2>
+      <div class="grid md:grid-cols-2 gap-4">
+        <!-- Card -->
+        <div class="glass rounded-2xl p-4 sm:p-5">
+          <button class="faq-btn w-full flex items-center justify-between text-left font-semibold text-base sm:text-lg"
+                  aria-expanded="false" aria-controls="c1">
+            What services do you offer?
+            <span class="chev transition-transform">⌄</span>
+          </button>
+          <div id="c1" class="mt-2 hidden text-silver">
+            We provide Social Media Marketing, Motion Graphics, Video Editing, Graphic & Web Design, and Tech Support. Packages can be customized or booked à la carte.
+          </div>
+        </div>
+
+        <div class="glass rounded-2xl p-4 sm:p-5">
+          <button class="faq-btn w-full flex items-center justify-between text-left font-semibold text-base sm:text-lg"
+                  aria-expanded="false" aria-controls="c2">
+            How does pricing work?
+            <span class="chev transition-transform">⌄</span>
+          </button>
+          <div id="c2" class="mt-2 hidden text-silver">
+            We scope by deliverables and complexity. Typical engagements start with a discovery call → proposal → fixed fee or sprint model. Request a quote via the Contact section.
+          </div>
+        </div>
+
+        <div class="glass rounded-2xl p-4 sm:p-5">
+          <button class="faq-btn w-full flex items-center justify-between text-left font-semibold text-base sm:text-lg"
+                  aria-expanded="false" aria-controls="c3">
+            What’s your usual turnaround time?
+            <span class="chev transition-transform">⌄</span>
+          </button>
+          <div id="c3" class="mt-2 hidden text-silver">
+            For most items, 3–7 business days after assets are received. Larger websites/brand kits take longer. We can expedite for an additional fee.
+          </div>
+        </div>
+
+        <div class="glass rounded-2xl p-4 sm:p-5">
+          <button class="faq-btn w-full flex items-center justify-between text-left font-semibold text-base sm:text-lg"
+                  aria-expanded="false" aria-controls="c4">
+            How many revisions are included?
+            <span class="chev transition-transform">⌄</span>
+          </button>
+          <div id="c4" class="mt-2 hidden text-silver">
+            Standard: up to 2–3 revision rounds per deliverable. Extra iterations are billed hourly or as add-ons. We keep feedback organized for speed.
+          </div>
+        </div>
+
+        <div class="glass rounded-2xl p-4 sm:p-5 md:col-span-2">
+          <button class="faq-btn w-full flex items-center justify-between text-left font-semibold text-base sm:text-lg"
+                  aria-expanded="false" aria-controls="c5">
+            Who owns the final files and IP?
+            <span class="chev transition-transform">⌄</span>
+          </button>
+          <div id="c5" class="mt-2 hidden text-silver">
+            Upon full payment, you receive usage rights to agreed deliverables (source files if included in scope). We may showcase non-confidential work in our portfolio with your permission.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Interns -->
+    <section id="interns" class="mt-12">
+      <h2 class="text-2xl sm:text-3xl font-extrabold mb-4">Interns</h2>
+      <div class="grid md:grid-cols-2 gap-4">
+        <div class="glass rounded-2xl p-4 sm:p-5">
+          <button class="faq-btn w-full flex items-center justify-between text-left font-semibold text-base sm:text-lg"
+                  aria-expanded="false" aria-controls="i1">
+            How do I apply for an internship?
+            <span class="chev transition-transform">⌄</span>
+          </button>
+          <div id="i1" class="mt-2 hidden text-silver">
+            Use the Contact form or email <a href="mailto:unicivixsolutions@gmail.com" class="underline">unicivixsolutions@gmail.com</a> with your portfolio/links and preferred track (Design, Editing, Motion, Web, Tech Support).
+          </div>
+        </div>
+
+        <div class="glass rounded-2xl p-4 sm:p-5">
+          <button class="faq-btn w-full flex items-center justify-between text-left font-semibold text-base sm:text-lg"
+                  aria-expanded="false" aria-controls="i2">
+            Is the internship paid?
+            <span class="chev transition-transform">⌄</span>
+          </button>
+          <div id="i2" class="mt-2 hidden text-silver">
+            Stipends may be available depending on project load and performance. All interns receive mentorship, real project exposure, and a certificate on successful completion.
+          </div>
+        </div>
+
+        <div class="glass rounded-2xl p-4 sm:p-5">
+          <button class="faq-btn w-full flex items-center justify-between text-left font-semibold text-base sm:text-lg"
+                  aria-expanded="false" aria-controls="i3">
+            What’s the duration and time commitment?
+            <span class="chev transition-transform">⌄</span>
+          </button>
+          <div id="i3" class="mt-2 hidden text-silver">
+            Typically 8–12 weeks. Weekly time is discussed case-by-case (usually 10–20 hours). We accommodate academic schedules when possible.
+          </div>
+        </div>
+
+        <div class="glass rounded-2xl p-4 sm:p-5 md:col-span-2">
+          <button class="faq-btn w-full flex items-center justify-between text-left font-semibold text-base sm:text-lg"
+                  aria-expanded="false" aria-controls="i4">
+            Will I get to work on live client projects?
+            <span class="chev transition-transform">⌄</span>
+          </button>
+          <div id="i4" class="mt-2 hidden text-silver">
+            Yes—interns work on guided tasks for live or internal projects based on skill fit. We review and ship work as a team to ensure quality.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- College Students -->
+    <section id="students" class="mt-12">
+      <h2 class="text-2xl sm:text-3xl font-extrabold mb-4">College Students / Competitions</h2>
+      <div class="grid md:grid-cols-2 gap-4">
+        <div class="glass rounded-2xl p-4 sm:p-5">
+          <button class="faq-btn w-full flex items-center justify-between text-left font-semibold text-base sm:text-lg"
+                  aria-expanded="false" aria-controls="s1">
+            How do I enroll in events like Edit Battles or Motion Jam?
+            <span class="chev transition-transform">⌄</span>
+          </button>
+          <div id="s1" class="mt-2 hidden text-silver">
+            For enrollment info, <a href="index.html#contact" class="underline">contact us</a> and we'll share current programs and next steps.
+          </div>
+        </div>
+
+        <div class="glass rounded-2xl p-4 sm:p-5">
+          <button class="faq-btn w-full flex items-center justify-between text-left font-semibold text-base sm:text-lg"
+                  aria-expanded="false" aria-controls="s2">
+            What’s included in the enrollment fee?
+            <span class="chev transition-transform">⌄</span>
+          </button>
+          <div id="s2" class="mt-2 hidden text-silver">
+            Event participation, challenge kits/briefs (where applicable), mentor feedback (group or written), and certificates for eligible participants.
+          </div>
+        </div>
+
+        <div class="glass rounded-2xl p-4 sm:p-5">
+          <button class="faq-btn w-full flex items-center justify-between text-left font-semibold text-base sm:text-lg"
+                  aria-expanded="false" aria-controls="s3">
+            Can I get a refund if I can’t participate?
+            <span class="chev transition-transform">⌄</span>
+          </button>
+          <div id="s3" class="mt-2 hidden text-silver">
+            As per our Terms, fees are generally non-refundable. If there’s a duplicate payment or a technical error, contact us with proof—we’ll help.
+          </div>
+        </div>
+
+        <div class="glass rounded-2xl p-4 sm:p-5 md:col-span-2">
+          <button class="faq-btn w-full flex items-center justify-between text-left font-semibold text-base sm:text-lg"
+                  aria-expanded="false" aria-controls="s4">
+            Will participation help with internships or placements?
+            <span class="chev transition-transform">⌄</span>
+          </button>
+          <div id="s4" class="mt-2 hidden text-silver">
+            Many winners and consistent contributors receive interview opportunities and referrals. Strong submissions also make great portfolio pieces for internships.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Still need help -->
+    <section class="mt-12">
+      <div class="glass rounded-2xl p-5 sm:p-6">
+        <h3 class="text-xl font-bold">Still have questions?</h3>
+        <p class="text-silver mt-1">Write to us and we’ll get back within 24 hours.</p>
+        <div class="mt-3 flex flex-wrap gap-3">
+          <a href="mailto:unicivixsolutions@gmail.com" class="px-4 py-2 rounded-xl bg-primary text-navy font-semibold hover:opacity-90">Email Us</a>
+          <a href="https://wa.me/917732869027?text=Hi%20Unicivix%20Team!%20I%20have%20a%20question%20about%20the%20FAQs."
+             target="_blank" rel="noopener"
+             class="px-4 py-2 rounded-xl glass hover:text-white">WhatsApp</a>
+          <a href="index.html#contact" class="px-4 py-2 rounded-xl glass hover:text-white">Contact Form</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="border-t border-white/10 mt-10">
+    <div class="mx-auto max-w-7xl px-4 py-8 text-silver text-sm flex flex-col sm:flex-row items-center justify-between gap-3">
+      <p>© <span id="year"></span> Unicivix • Inspire Your Skill. Ignite Your Project.</p>
+      <div class="flex gap-4">
+        <a href="privacy.html" class="hover:text-white">Privacy</a>
+        <a href="terms.html" class="hover:text-white">Terms</a>
+        <a href="faq.html" class="hover:text-white">FAQs</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Simple accordion script (no extra library) -->
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    const toggles = document.querySelectorAll('.faq-btn');
+    toggles.forEach(btn => {
+      const panel = document.getElementById(btn.getAttribute('aria-controls'));
+      btn.addEventListener('click', () => {
+        const expanded = btn.getAttribute('aria-expanded') === 'true';
+        // Close other open items within the same card grid (optional)
+        const siblings = btn.closest('.glass')?.parentElement?.querySelectorAll('.faq-btn') || [];
+        siblings.forEach(sib => {
+          if (sib !== btn) {
+            sib.setAttribute('aria-expanded', 'false');
+            const sibPanel = document.getElementById(sib.getAttribute('aria-controls'));
+            sibPanel?.classList.add('hidden');
+          }
+        });
+
+        btn.setAttribute('aria-expanded', String(!expanded));
+        panel.classList.toggle('hidden', expanded);
+      });
+    });
+  </script>
+
+  <!-- SEO: FAQPage JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      { "@type": "Question", "name": "What services do you offer?",
+        "acceptedAnswer": { "@type": "Answer", "text": "We provide Social Media Marketing, Motion Graphics, Video Editing, Graphic & Web Design, and Tech Support. Packages can be customized." } },
+      { "@type": "Question", "name": "How does pricing work?",
+        "acceptedAnswer": { "@type": "Answer", "text": "We scope by deliverables and complexity after a discovery call, then share a proposal with fixed fee or sprint pricing." } },
+      { "@type": "Question", "name": "Who owns the final files and IP?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Upon full payment, you receive usage rights to agreed deliverables (source files if included). We may showcase non-confidential work in our portfolio with permission." } },
+      { "@type": "Question", "name": "How do I apply for an internship?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Email unicivixsolutions@gmail.com with your portfolio and preferred track (Design, Editing, Motion, Web, Tech Support) or use the Contact form." } },
+      { "@type": "Question", "name": "Is the internship paid?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Stipends may be available based on project load and performance. All interns receive mentorship, real project exposure, and a certificate on completion." } },
+      { "@type": "Question", "name": "How do I enroll in events?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Go to the Enroll section on our website, complete the form, and pay via UPI. You’ll receive confirmation after we verify your UTR/reference." } },
+      { "@type": "Question", "name": "Are enrollment fees refundable?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Generally non-refundable. If there’s a duplicate payment or technical error, contact us with proof and we’ll assist." } }
+    ]
+  }
+  </script>
+</body>
+</html>
